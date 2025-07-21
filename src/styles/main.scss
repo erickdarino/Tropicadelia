@@ -14,9 +14,12 @@
     text-shadow: 2px 2px 2px  variables.$secondaryTextColor;
     list-style: none;
 }
-body{
+html,body{
     overflow-x: hidden;
     background-color:variables.$red;
+    @media (min-width:300px) and (max-width:1440px){
+        overflow-x:hidden;
+    }
 }
 .container{
     max-width: 960px;
