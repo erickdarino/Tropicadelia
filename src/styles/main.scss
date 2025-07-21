@@ -1,0 +1,30 @@
+@use 'variables';
+@use 'hero';
+@use 'lineup';
+@use 'footer';
+@use 'components/infos-bar';
+@use 'components/button';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Winky Rough", sans-serif;
+    color: variables.$primaryTextColor;
+    text-shadow: 2px 2px 2px  variables.$secondaryTextColor;
+    list-style: none;
+}
+body{
+    background-color:variables.$red;
+}
+.container{
+    max-width: 960px;
+    width:100%;
+    margin:0 auto;
+
+    @media (max-width:640px){
+        max-width: 80%;
+    }
+    @media (max-width:1024px){
+        max-width: 90%;
+    }
+}

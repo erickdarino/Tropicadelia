@@ -1,0 +1,169 @@
+@use 'variables';
+.lineup {
+    margin:0 auto;
+
+    &__title{
+        text-align: center;
+        font-size: 35px;
+        margin: 30px 0;
+        line-height: 56px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    &__stage{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+
+        &__btn{
+            padding:20px;
+
+        }   
+    }
+
+    &__shows{
+        margin-top: 30px; 
+        padding:0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        
+        &--is-active{
+            display: flex;
+        }
+
+        &__artist{
+            width: 100%;
+            margin: 0;
+            padding: 25px 196px;
+            display: flex;
+            gap: 30px;
+
+
+        &--primary-bg{
+            flex-direction: row-reverse;
+            background-image: linear-gradient(variables.$red, variables.$blue1);
+        }
+        &--secondary-bg{
+            background-image: linear-gradient(variables.$blue1, variables.$pink);
+        }
+        &--thirdary-bg{
+            flex-direction: row-reverse;
+            background-image: linear-gradient(variables.$pink, variables.$blue2);
+        }
+        &--fourthary-bg{
+            background-image: linear-gradient(variables.$blue2, variables.$orange);
+        }
+        &--fifthary-bg{
+            flex-direction: row-reverse;
+            background-image: linear-gradient(variables.$orange, variables.$pink);
+        }
+        &--sixthary-bg{
+            background-image: linear-gradient(variables.$pink, variables.$red);
+        }
+        &--seventhary-bg{
+            flex-direction: row-reverse;
+            background-image: linear-gradient(variables.$red, variables.$secondaryTextColor);
+        }
+
+
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap:16px
+            }
+            &__title{
+                color:variables.$yellow;
+                padding: 0;
+                font-size: 25px;
+                text-transform: uppercase;
+            }
+            &__img{
+                max-width: 290px;
+                max-height: 220px;
+                width: 100%;
+                height:100%;
+                border-radius: 3px;
+                border: 3px solid variables.$yellow;
+            }
+            &__description{
+                line-height: 22px;
+                text-align: justify;
+            }
+        }
+    }
+    @media(max-width:640px){
+        &__shows{
+            display: none;
+            margin: 0 auto;
+            padding-top: 15px;
+            max-width: 100%;
+
+            &--is-active{
+            display: flex;
+            }
+            
+            
+            &__artist{
+                display: block;
+                text-align: center;
+                padding:30px 0;
+
+                &__img{
+                    width: 100%;
+                }
+                &__description{
+                    line-height: 22px;
+                    text-align: justify;
+                }     
+            } 
+        }
+        &__stage{
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            padding: 20px 0;
+
+            &__btn{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }    
+    @media (min-width:641px) and (max-width:1023px){
+        &__shows{
+            display: none;
+            margin: 0 auto;
+            padding-top: 15px;
+            max-width: 100%;
+
+            &--is-active{
+            display: flex;
+            }
+            
+            &__artist{
+                display: flex;
+                margin: 0;
+                padding:40px 35px;
+
+                .container{
+                    gap:10px;
+                }
+                &__img{
+                    width: 100%;
+                }
+                &__description{
+                    line-height: 20px;
+                    text-align: justify;
+                }     
+            }      
+        }
+        &__stage{
+            padding: 20px 0;
+            margin: 0;
+        }
+    }        
+}

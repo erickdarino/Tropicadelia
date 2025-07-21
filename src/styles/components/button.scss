@@ -1,0 +1,51 @@
+@use '../variables';
+.button{
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 3px;
+    border: 2px solid variables.$secondaryTextColor;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 5px #000;
+
+
+    &-is--active{
+                border: 3px solid variables.$yellow ;
+                box-shadow: 2px 2px 5px variables.$yellow;
+            }
+    
+
+    &--primary{
+        background-color: variables.$blue1;
+        &:hover{
+        background-color: lighten(variables.$blue1,20%);
+        }
+    }
+    &--secondary{
+        background-color: variables.$blue2;
+        &:hover{
+        background-color: lighten(variables.$blue2,20%);
+        }
+
+    }
+    &--thirdary{
+        background-color: variables.$pink;
+        &:hover{
+        background-color: lighten(variables.$pink,20%);
+        }
+    }
+    @media(max-width:640px) {
+        display: block;
+        width: 100%;
+    }
+    @media(max-width:1024px) {
+        display: flex;
+        align-items: center;
+    }
+}

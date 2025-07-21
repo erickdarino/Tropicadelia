@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropicadelia!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/tropicadelia.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <img src="images/tropicadelia.webp" alt="logo Tropicadelia" class="hero__logo">
+            <h1 class="hero__title">O extraordinário evento de música, arte e diversão começa em <span id="contador"></span></h1>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Parque Ney Braga - Londrina - Paraná
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 180,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        27/09/2025 às 15hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta seu ingresso
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="lineup">
+        <h2 class="lineup__title">Lineup</h2>
+        <ul class="lineup__stage">
+            <li ><a data-tab-button="tropical" href="#" class="lineup__stage__btn  button button--secondary button-is--active ">Palco Tropical</a></li>
+            <li ><a data-tab-button="hype" href="#" class="lineup__stage__btn button button--thirdary">Palco Hype</a></li>
+        </ul>
+        <ul class="lineup__shows lineup__shows--is-active" data-tab-id="tropical">
+            <li class="lineup__shows__artist lineup__shows__artist--primary-bg" data-aos ="fade-right">
+                <img class="lineup__shows__artist__img" src="images/palco-tropical/djonga-ret-cruz.webp" alt="trio">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">Filipe Ret, Djonga e Delacruz</h3>
+                    <p class="lineup__shows__artist__description">Três potências do rap nacional sobem ao palco para uma noite histórica! Filipe Ret, com sua lírica afiada e presença marcante, se une ao peso das rimas de Djonga e à sensibilidade poética de Delacruz, misturando atitude, emoção e flow. Prepare-se para um show inesquecível, onde o rap encontra o sentimento e a energia explode na batida. Uma verdadeira celebração da cultura urbana!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--secondary-bg" data-aos ="fade-left">
+                <img class="lineup__shows__artist__img" src="images/palco-tropical/majorrdxama.webp" alt="dupla">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">Major RD convida Xamã</h3>
+                    <p class="lineup__shows__artist__description">O talento explosivo de Major RD se encontra com o carisma e a intensidade de Xamã em um show que promete emoção e impacto do começo ao fim. Com rimas afiadas e performances que arrepiam, essa dupla representa o melhor da nova geração do rap brasileiro. Um encontro de vozes potentes e mensagens profundas que vão ecoar na sua alma. Imperdível para quem ama música com verdade e presença de palco!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--thirdary-bg" data-aos ="fade-right">
+                <img class="lineup__shows__artist__img" src="images/palco-tropical/manobconvida.webp" alt="trio">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">mano brown convida rael e rincon sapiencia</h3>
+                    <p class="lineup__shows__artist__description">Três gigantes da música brasileira juntos em uma apresentação poderosa! Mano Brown, lenda viva do rap, comanda ao lado de Rael, dono de uma musicalidade única, e Rincon Sapiência, mestre da rima e da estética. Um espetáculo que une consciência, ritmo e poesia de forma intensa e envolvente. Venha sentir a batida que transforma e conecta. Uma apresentação que vai marcar época!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--fourthary-bg" data-aos ="fade-left">
+                <img class="lineup__shows__artist__img" src="images/palco-tropical/cpm22.webp" alt="banda">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">cpm22 30 anos</h3>
+                    <p class="lineup__shows__artist__description">Com mais de duas décadas de estrada, o CPM 22 chega com sua energia inconfundível, unindo gerações no som que marcou vidas. Hits como “Um Minuto para o Fim do Mundo” e “Dias Atrás” vão incendiar o palco com punk rock de verdade, letras que tocam e um show eletrizante. Se você tem alma rockeira ou quer sentir a vibração nostálgica dos anos 2000, essa é a hora de cantar a plenos pulmões. Não fique de fora!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--fifthary-bg" data-aos ="fade-right">
+                <img class="lineup__shows__artist__img" src="images/palco-tropical/maneva.webp" alt="banda">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">maneva</h3>
+                    <p class="lineup__shows__artist__description">Prepare-se para uma viagem musical cheia de boas vibrações com o som envolvente do Maneva. A banda traz o melhor do reggae brasileiro, com mensagens de amor, paz e reflexão, embaladas por uma sonoridade única. Um show para sentir, cantar e se conectar com a energia positiva que só o Maneva proporciona. Traga sua vibe leve e curta essa experiência ao ar livre com a alma tranquila e o coração pulsando!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--sixthary-bg" data-aos ="fade-right">
+                <img class="lineup__shows__artist__img" src="images/palco-tropical/hariel.webp" alt="hariel">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">mc hariel, don juan e davi</h3>
+                    <p class="lineup__shows__artist__description">O baile está garantido com esse trio de gigantes do funk! MC Hariel, MC Don Juan e MC Davi chegam com os hits que dominam as pistas e embalam milhões. Uma apresentação vibrante, cheia de carisma, batidas envolventes e letras que fazem todo mundo cantar junto. Se você quer dançar, curtir e viver uma noite intensa no ritmo do funk paulista, esse é o momento! Energia nas alturas, vem pro movimento!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--seventhary-bg" data-aos ="fade-left">
+                <img class="lineup__shows__artist__img" src="images/palco-tropical/orochi.webp" alt="orochi">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">mc orochi</h3>
+                    <p class="lineup__shows__artist__description">O fenômeno do rap nacional está confirmado! MC Orochi sobe ao palco trazendo toda sua intensidade, carisma e rimas afiadas. Com milhões de fãs e hits que dominam as plataformas, ele representa a força da nova geração do trap e do rap. Prepare-se para um show vibrante, com muita atitude, flow envolvente e letras que retratam a vivência das ruas com autenticidade. Uma apresentação que vai ferver o palco e contagiar o público do início ao fim!
+                </div>
+            </li>
+        </ul>
+        <ul class="lineup__shows" data-tab-id="hype">
+            <li class="lineup__shows__artist lineup__shows__artist--primary-bg" data-aos ="fade-right">
+                <img class="lineup__shows__artist__img" src="images/palco-hype/fatsync.webp" alt="trio">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">Fatsync</h3>
+                    <p class="lineup__shows__artist__description">Prepare-se para uma jornada sonora intensa com o som futurista e pulsante de Fatsync! Com sets marcados por transições hipnóticas, atmosferas vibrantes e batidas que arrepiam, o artista promete elevar a pista a outro nível. Um espetáculo de energia e profundidade para quem vive a música eletrônica com alma e corpo. Se você busca uma experiência única na pista, Fatsync é presença obrigatória!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--secondary-bg" data-aos ="fade-left">
+                <img class="lineup__shows__artist__img" src="images/palco-hype/barja.webp" alt="barja">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">Barja</h3>
+                    <p class="lineup__shows__artist__description">Com presença marcante e sets cheios de personalidade, Barja é sinônimo de pista quente e vibe elevada. Dona de uma estética sonora que mistura grooves envolventes e batidas que não deixam ninguém parado, ela comanda o dancefloor com maestria. Seu som é uma celebração à liberdade, à dança e à música eletrônica em sua essência. Se entrega e vem sentir o som com Barja no controle!
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--thirdary-bg" data-aos ="fade-right">
+                <img class="lineup__shows__artist__img" src="images/palco-hype/chapelerocamacho.webp" alt="chapelero camacho">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">Chapelero b2b camacho</h3>
+                    <p class="lineup__shows__artist__description">Duas forças da cena eletrônica se unem em um B2B de respeito: Chapelero e Camacho prometem incendiar a pista com uma fusão explosiva de estilos, batidas pesadas e viradas insanas. É techno, tech house e muito groove em uma performance única, feita para os amantes da noite intensa e da pista vibrando até o amanhecer. Quem é raiz da rave sabe: esse encontro vai ser memorável!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--fourthary-bg" data-aos ="fade-left">
+                <img class="lineup__shows__artist__img" src="images/palco-hype/kolombo.webp" alt="kolombo">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">kolombo</h3>
+                    <p class="lineup__shows__artist__description">Ícone da cena mundial, o belga Kolombo traz ao palco seu som inconfundível: um mix envolvente de house, funk e grooves modernos que conquistam pistas pelo mundo. Com experiência de sobra e uma energia contagiante, ele entrega um set magnético, daqueles que grudam na alma e nos pés. Se você curte dançar sem parar ao som de um mestre, Kolombo é sua parada obrigatória!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--fifthary-bg" data-aos ="fade-right">
+                <img class="lineup__shows__artist__img" src="images/palco-hype/blazy.webp" alt="blazy">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">blazy</h3>
+                    <p class="lineup__shows__artist__description">Prepare-se para sentir a vibração do psytrance como nunca! Blazy chega com seu som psicodélico, potente e hipnótico, arrastando multidões pelo mundo com suas produções marcantes e sets arrebatadores. Uma verdadeira explosão sensorial para quem vive a pista com intensidade. Deixe-se levar pelo trance e embarque nessa jornada sonora única — Blazy vai comandar o ritual!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--sixthary-bg" data-aos ="fade-left">
+                <img class="lineup__shows__artist__img" src="images/palco-hype/vinivic.webp" alt="vinivici">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">vini vici</h3>
+                    <p class="lineup__shows__artist__description">Lendas do psytrance mundial, os israelenses Vini Vici desembarcam com um set poderoso e transcendental. Combinando batidas tribais, vocais épicos e drops insanos, sua performance é uma viagem sonora que conecta culturas e energias em uma só vibração. Se você quer sentir a pista explodir de emoção, prepare-se: Vini Vici vai te levar a um outro universo musical!
+                    </p>
+                </div>
+            </li>
+            <li class="lineup__shows__artist lineup__shows__artist--seventhary-bg" data-aos ="fade-right">
+                <img class="lineup__shows__artist__img" src="images/palco-hype/vlougbr.webp" alt="dupla">
+                <div class="container">
+                    <h3 class="lineup__shows__artist__title">victor lou b2b dj gbr</h3>
+                    <p class="lineup__shows__artist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus, non sint dolore inventore veniam minus molestiae iusto debitis suscipit totam tempore dolorum corporis rerum ratione, blanditiis odit ducimus nisi!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus amet pariatur, deleniti est ipsam ducimus nihil. Eos error, aliquam repellendus suscipit, quos ut officia odio odit dolorem at nisimagni.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+        <p>© 2025 Tropicadelia. Todos os direitos reservados.</p>
+        <p><b>Aviso Legal:</b> Este site é um projeto acadêmico desenvolvido para fins exclusivamente educacionais, como parte de um curso de front-end. Todo o conteúdo relacionado ao evento Tropicadelia é utilizado de forma não comercial, com o objetivo de praticar e demonstrar habilidades em HTML, CSS e JavaScript. Este projeto não possui qualquer vínculo oficial com os detentores dos direitos autorais do evento e seus artistas.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
